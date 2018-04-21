@@ -2,6 +2,7 @@ package com.sunshine.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.Platform;
@@ -13,7 +14,7 @@ public class Proper {
 
 	public static String userDir = System.getProperty("user.dir");
 
-	private static void getCustomNodeJS() throws Exception {
+	private static void getCustomNodeJS() throws IOException  {
 		File file = new File(userDir + "/custom_node_path.properties");
 		FileInputStream fileInputStream = new FileInputStream(file);
 		Properties properties = new Properties();

@@ -12,7 +12,11 @@ import io.appium.java_client.service.local.flags.AndroidServerFlag;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 
-
+/**
+ * 
+ * @author Administrator
+ *
+ */
 public class AppiumServer {
 	public Android android;
 	public AvailablePort availablePort;
